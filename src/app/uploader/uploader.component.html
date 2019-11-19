@@ -2,8 +2,28 @@
     <span>Drop your file here</span>
     <input hidden type="file" #fileInput (change)="uploadFile($event.target.files)">
 </div>
+
 <div class="files-list" *ngFor="let file of files;let i= index">
     <p> {{ file.name }} </p>
     <button class="normalize-file" (click)="normalizeAttachment(i)">Normalize</button>
     <button class="delete-file" (click)="deleteAttachment(i)">Delete</button>
+</div>
+
+<div class="normalized-content" [hidden]="normalizedContent.length<1">
+    <table>
+        <tr>
+            <th width="200">Level</th>
+            <th width="200">Code</th>
+            <th width="200">Description</th>
+            <th width="200">Parent Code</th>
+            <th width="200">Parent Description</th>
+        </tr>
+        <tr *ngFor="let normalizedItem of normalizedContent">
+            <td>{{normalizedItem.depth}}</td>
+            <td>{{normalizedItem.code}}</td>
+            <td>{{normalizedItem.description}}</td>
+            <td>{{normalizedItem.parentCode}}</td>
+            <td>{{normalizedItem.parentDescription}}</td>
+        </tr>
+    </table>
 </div>
