@@ -1,19 +1,31 @@
 .draggable-space
-    background-color: #f5fcff
-    border: 1px solid darkgray
+    border: .1em dashed darkgray
+    border-radius: 0
+    color: darkgray
     height: 15em
-    margin: 1em 10%
-    width: 80%
+    line-height: 15em
+    text-align: center
 
     &:hover
-        border: 1px dashed black
+        border-color: black
+        color: black
         cursor: pointer
 
     &.draggable-space.element-over-space
-        border: 1px dashed black
+        border-color: black
+        color: black
 
-.files-list
-    border: 1px solid steelblue
-    margin: 1em 10%
-    color: steelblue
+.center80
+    margin: .5em auto 1em
     width: 80%
+
+.center100
+    margin: 0 auto
+    width: 100%
+
+.righted
+    float: right
+
+.inner-right
+    position: absolute
+    right: 11%
