@@ -1,0 +1,38 @@
+.draggable-space {
+    border: .1em dashed darkgray;
+    border-radius: 0;
+    color: darkgray;
+    height: 15em;
+    line-height: 15em;
+    text-align: center;
+
+    &:hover {
+        border-color: black;
+        color: black;
+        cursor: pointer;
+    }
+
+    &.draggable-space.element-over-space {
+        border-color: black;
+        color: black;
+    }
+}
+
+.center80 {
+    margin: .5em auto 1em;
+    width: 80%;
+}
+
+.center100 {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.righted {
+    float: right;
+}
+
+.inner-right {
+    position: absolute;
+    right: 10%;
+}

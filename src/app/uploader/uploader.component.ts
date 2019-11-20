@@ -8,7 +8,7 @@ import {MatTableDataSource} from '@angular/material/table';
 @Component({
   selector: 'app-uploader',
   templateUrl: './uploader.component.html',
-  styleUrls: ['./uploader.component.sass']
+  styleUrls: ['./uploader.component.scss']
 })
 
 export class UploaderComponent {
