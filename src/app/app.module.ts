@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NormalizerService } from './services/normalizer.service';
 import { DndDirective } from './directives/dnd.directive';
 import { UploaderComponent } from './uploader/uploader.component';
+import { ReadmeComponent } from './readme/readme.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatIconModule } from '@angular/material/icon';
@@ -23,7 +24,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
   declarations: [
     AppComponent,
     DndDirective,
-    UploaderComponent
+    UploaderComponent,
+    ReadmeComponent
   ],
   imports: [
     BrowserModule,
